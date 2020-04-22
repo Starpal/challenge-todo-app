@@ -23,6 +23,76 @@
   color: #61dafb;
 }
 
+.todoList{
+  display: flex;
+  flex-direction: column;
+}
+
+.todoList a{
+  text-decoration: none;
+  color: rgb(15, 15, 13);
+}
+
+.btn{
+  background-color: rgba(173, 27, 64, 0.5);
+  color: beige;
+  font-family: "Helvetica";
+  padding: 1em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.editTodoBtn{
+  background-color: rgba(27, 107, 173, 0.7);
+  color: beige;
+  font-family: "Helvetica";
+  padding: 1em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.addTodoBtn{
+  background-color: rgba(16, 94, 87, 0.9);
+  color: beige;
+  font-family: "Helvetica";
+  padding: 1em;
+  padding: 1em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.todoListTitle{
+  min-width: 100vh;
+  background-color: chocolate;
+  color: rgb(43, 59, 88);
+  padding: 1em;
+  font-family: "Helvetica";
+}
+
+.todoTitle{
+  min-width: 100vh;
+  background-color: rgb(30, 210, 165);
+  color: rgb(43, 59, 88);
+  padding: 1em;
+  font-family: "Helvetica";
+ 
+}
+
+body{
+ background: url("https://ugc.reveliststatic.com/gen/constrain/640/640/80/2018/04/12/12/c5/u0/phkraiwo8o2qbwe.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.addTodoForm{
+  background-color: rgb(243, 216, 180);
+}
+
+.linkBack{
+font-size: 1.5em;
+font-weight: bold;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
