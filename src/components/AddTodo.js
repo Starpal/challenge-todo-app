@@ -3,16 +3,12 @@ import axios from "axios";
 
 
 class AddTodo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { title: "", body: "", isShowing: false };
-   };
-  
+  state = { title: "", body: "", isShowing: false };
 
   handleFormSubmit = event => {
     event.preventDefault();
-    const title = this.state.title;
-    const body = this.state.body;
+    const {title, body}  = this.state;
+
     axios
       .post("http://localhost:4000/api/v1/todos", { title, body })
       .then(() => {

@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
       <Switch>
-          <Route exact path="/todos" component={TodoList}/>
+          <Route exact path="/" component={TodoList}/>
           <Route exact path="/todos" component={AddTodo} />
           <Route exact path="/todos/:id" component={SingleTodo} />
           </Switch>

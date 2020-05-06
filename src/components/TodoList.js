@@ -5,10 +5,7 @@ import AddTodo from "./AddTodo";
 
 
 class TodotList extends Component {
-  constructor() {
-    super();
-    this.state = { listOfTodos: [] };
-  }
+  state = { listOfTodos: [] };
 
   getAllTodos = () => {
     axios.get(`http://localhost:4000/api/v1/todos`).then(responseFromApi => {
@@ -24,7 +21,7 @@ class TodotList extends Component {
   render() {
     return (
       <div>
-        <h1 className="todoListTitle">Your ToDos</h1>
+        <h1 className="todoListTitle">Your To Do's</h1>
         <div className="addTodoForm">
           {this.state.listOfTodos.map(todo => {
             return (
@@ -32,7 +29,6 @@ class TodotList extends Component {
                 <Link to={`/todos/${todo._id}`}>
                   <h3><u>{todo.title}</u></h3>
                 </Link>
-                {/* <p className="listBody"style={{maxWidth: '400px'}} >{todo.body} </p> */}
               </div>
             );
           })}

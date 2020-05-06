@@ -2,20 +2,15 @@ import React, { Component } from "react";
 import axios from "axios";
 
 class EditTodo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+ state = {
       title: this.props.theTodo.title,
       body: this.props.theTodo.body,
       isShowing: false 
     };
-  }
 
   handleFormSubmit = event => {
-    const title = this.state.title;
-    const body = this.state.body;
-
     event.preventDefault();
+    const {title, body}  = this.state;
 
     axios
       .put(`http://localhost:4000/api/v1/todos/${this.props.theTodo._id}`, {

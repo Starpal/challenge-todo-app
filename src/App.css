@@ -2,27 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 .todoList{
   display: flex;
   flex-direction: column;
@@ -30,7 +9,7 @@
 
 .todoList a{
   text-decoration: none;
-  color: rgb(15, 15, 13);
+  color: rgb(43, 43, 39);
 }
 
 .btn{
@@ -63,34 +42,40 @@
 
 .todoListTitle{
   min-width: 100vh;
-  background-color: chocolate;
-  color: rgb(43, 59, 88);
+  background-color: rgba(210, 105, 30, 0.753);
+  color: rgb(18, 67, 90);
   padding: 1em;
   font-family: "Helvetica";
 }
 
 .todoTitle{
   min-width: 100vh;
-  background-color: rgb(30, 210, 165);
-  color: rgb(43, 59, 88);
-  padding: 1em;
+  background-color: rgba(25, 82, 68, 0.651);
+  color: rgb(245, 244, 239);
+  padding: 0.6em;
   font-family: "Helvetica";
- 
 }
 
 body{
- background: url("https://ugc.reveliststatic.com/gen/constrain/640/640/80/2018/04/12/12/c5/u0/phkraiwo8o2qbwe.jpg");
+ height: 100vh;
+ background: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
  background-repeat: no-repeat;
  background-size: cover;
 }
 
 .addTodoForm{
-  background-color: rgb(243, 216, 180);
+  background-color: rgba(243, 216, 180, 0.726);
 }
 
-.linkBack{
+.addTodoForm p{
+  font-size: 1.5em;
+}
+
+.linkBack a{
 font-size: 1.5em;
-font-weight: bold;
+font-weight: bolder;
+text-decoration: none;
+color: rgb(248, 245, 227);
 }
 
 @keyframes App-logo-spin {

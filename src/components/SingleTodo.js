@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom';
 import EditTodo from './EditTodo';
 
 class SingleTodo extends Component {
-  constructor(props){
-    super(props);
-    this.state = {};
-  }
+ state = {};
 
   componentDidMount(){
     this.getSingleTodo();
@@ -44,14 +41,12 @@ class SingleTodo extends Component {
     const { params } = this.props.match;
     axios.delete(`http://localhost:4000/api/v1/todos/${params.id}`)
     .then( () =>{
-        this.props.history.push('/todos');
-
+        this.props.history.push('/');
     })
     .catch((err)=>{
         console.log(err)
     })
   }
-
 
   render(){
     return(
@@ -63,14 +58,10 @@ class SingleTodo extends Component {
         <br/> <br/>
         <div>{this.renderEditForm()} </div>
         <br/>
-
-<br/><br/><br/><br/><br/>
-
-        
       </div>
       <br/><br/><br/><br/><br/><br/><br/>
       <div className="linkBack">
-      <Link to={'/todos'}>Back to To Do's</Link>
+      <Link to={'/'}><u><b>Back to To Do's</b></u></Link>
       </div>
       </div>
     )
